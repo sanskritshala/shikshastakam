@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <title>Analysis</title>
+</head>
+
+<body>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+    });
+  </script>
+
+  <div id="header"></div>
+  <div class="container" style="justify-content: center;">
+    <a onclick="display_analysis('grammer_analysis_slider')" class="button1 bouncy blue_button"
+      style="animation-delay:0.21s">Grammer analysis</a>
+    <a onclick="display_analysis('metrical_analysis_slider')" class="button1 bouncy blue_button"
+      style="animation-delay:0.15s">Metrical analysis</a>
+    <a onclick="display_analysis('alankar_analysis_slider')" class="button1 bouncy blue_button"
+      style="animation-delay:0.14s">Alankar school</a>
+      <a onclick="display_school('reeti_school')" class="button1 bouncy purple_button" style="animation-delay:0.21s">Reeti
+        school</a>
+    <a onclick="display_school('rasa_school')" class="button1 bouncy purple_button" style="animation-delay:0.14s">Rasa
+      school</a>
+      <a onclick="display_school('vakrokti_school')" class="button1 bouncy purple_button"
+      style="animation-delay:0.21s">Vakrokti school</a>
+    <a onclick="display_school('dhvani_school')" class="button1 bouncy purple_button"
+      style="animation-delay:0.14s">Dhvani school</a>
+    <a onclick="display_school('auchitya_school')" class="button1 bouncy purple_button"
+      style="animation-delay:0.21s">Auchitya school</a>
+  </div>
+  <div class="center_justify">
+    <div id="grammer_analysis_slider">
+      <p class="control_next" onclick="moveRight('grammer_analysis_slider');"><i class="fa fa-angle-right"></i>
+      <p>
+      <p class="control_prev" onclick="moveLeft('grammer_analysis_slider');"><i class="fa fa-angle-left"></i></p>
+      <ul>
+        <li style="height:2000px" class="slide1">
+          <h4 style="line-height:2; margin: 1rem 0;">चेतो-दर्पण-मार्जनं भव-महा-दावाग्नि-निर्वापणं <br />
+            श्रेयः-कैरव-चन्द्रिका-वितरणं विद्या-वधू-जीवनम् | <br />
+            आनन्दाम्बुधि-वर्धनं प्रति-पदं पूर्णामृतास्वादनं<br />
+            सर्वात्म-स्नपनं परं विजयते श्री-कृष्ण-सङ्कीर्तनम् || 1 ||
+          </h4>
+          <h4 class="line_height2 margin_T1">ceto-darpaṇa-mārjanaṁ bhava-mahā-dāvāgni-nirvāpaṇaṁ<br />
+            śreyaḥ-kairava-candrikā-vitaraṇaṁ vidyā-vadhū-jīvanam |<br />
+            ānandāmbudhi-vardhanaṁ prati-padaṁ pūrṇāmṛtāsvādanaṁ<br />
+            sarvātma-snapanaṁ paraṁ vijayate śrī-kṛṣṇa-saṅkīrtanam || 1 ||<br />
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">cetaḥ — of the heart; darpaṇa — the mirror; mārjanam —
+            cleansing; bhava — of material existence;<br /> mahā-dāva-agni — the blazing forest fire;
+            nirvāpaṇam — extinguishing; śreyaḥ — of good fortune; <br />kairava — the white lotus; candrikā — the
+            moonshine; vitaraṇam — spreading; vidyā — of all education; <br />
+            vadhū — wife; jīvanam — the life; ānanda — of bliss; ambudhi — the ocean; vardhanam — increasing;
+            <br />prati-padam — at every step; pūrṇa-amṛta — of the full nectar;
+            āsvādanam — giving a taste; sarva — for everyone;<br /> ātma-snapanam — bathing of the self; param —
+            transcendental;
+            vijayate — let there be victory; <br />śrī-kṛṣṇa-saṅkīrtanam — for the congregational chanting of the holy
+            name of Kṛṣṇa.
+          </p>
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“Let there be all victory for the chanting of the
+            holy name of Lord Kṛṣṇa, which can cleanse the mirror of the heart and stop the miseries of the blazing
+            fire of material existence. That chanting
+            is the waxing moon that spreads the white lotus of good fortune for all living entities. It is the life
+            and soul of all education. The chanting of the holy name of Kṛṣṇa expands the blissful ocean of
+            transcendental life. It gives a cooling effect to everyone and enables one to taste full nectar at every
+            step.”</p>
+
+          
+          <h4 class="line_height3">Morph-dep analysis</h4>
+     
+          <table style="width:60%;line-height:14px;">
+            <thead>
+              <tr>
+                <th >No</th>
+                <th >Word</th>
+                <th >Morph analysis</th>
+                <th >Dep analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td >1</td>
+                <td >चेतो-दर्पण-मार्जनम्</td>
+                <td >चेतो-दर्पण-मार्जन{नपुं;1;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >2</td>
+                <td >भव-महा-दावाग्नि-निर्वापणम्</td>
+                <td >भव-महा-दावाग्नि-निर्वापण{नपुं;2;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >3</td>
+                <td >श्रेयः-कैरव-चन्द्रिका-वितरणम्</td>
+                <td >श्रेयः-कैरव-चन्द्रिका-वितरण{नपुं;1;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >4</td>
+                <td >विद्या-वधू-जीवनम्</td>
+                <td >विद्या-वधू-जीवन{नपुं;1;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >5</td>
+                <td >आनन्दाम्बुधि-वर्धनम्</td>
+                <td >आनन्दाम्बुधि-वर्धन{नपुं;1;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >6</td>
+                <td >प्रति-पदम्</td>
+                <td >प्रति-पद{नपुं;1;एक}</td>
+                <td >अधिकरणम्,7</td>
+              </tr>
+              <tr>
+                <td >7</td>
+                <td >पूर्णामृतास्वादनम्</td>
+                <td >पूर्णामृतास्वादन{नपुं;1;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >8</td>
+                <td >सर्वात्म-स्नपनम्</td>
+                <td >सर्वात्म-स्नपन{नपुं;1;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >9</td>
+                <td >परम्</td>
+                <td >पर{नपुं;1;एक}</td>
+                <td >विशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td >10</td>
+                <td >विजयते</td>
+                <td >वि_जि1{कर्तरि;लट्;प्र;एक;आत्मनेपदी;वि_जि;भ्वादिः}</td>
+                <td >Root,0</td>
+              </tr>
+              <tr>
+                <td >11</td>
+                <td >श्री-कृष्ण-सङ्कीर्तनम्</td>
+                <td >श्री-कृष्ण-सङ्कीर्तन{नपुं;1;एक}</td>
+                <td >कर्ता,10</td>
+              </tr>
+            </tbody>
+            </table>
+        
+          <!--<img src="images/shloka1_morp.jpg" style="width:300px; height:300px;"/>-->
+          <table>
+          </table>
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2"> चेतो-दर्पण-मार्जनं भव-महा-दावाग्नि-निर्वापणं श्रेयः-कैरव-चन्द्रिका-वितरणं
+            विद्या-वधू-जीवनम् आनन्दाम्बुधि-वर्धनं प्रति-पदं पूर्णामृतास्वादनं सर्वात्म-स्नपनं श्री-कृष्ण-सङ्कीर्तनम् परं
+            विजयते </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p>ceto-darpaṇa-mārjanaṁ: [0, 2, Avadharanapurak karmadharaya samas], [0, 3, T6] </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>bhava-mahā-dāvāgni-nirvāpaṇaṁ: [0, 3, Avadharanapurak karmadharaya samas], [1, 3, ?] [0, 4, T6] </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>śreyaḥ-kairava-candrikā-vitaraṇaṁ: [1, 3, upman uttarpada karmadharaya] , [1, 4, T6], [0, 4,
+                Bahuvreehi] </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>ānandāmbudhi-vardhanaṁ: [0, 2, T6]</p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>prati-padaṁ: [0, 2, A1]</p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>pūrṇa-amṛtā-svādanaṁ: [0, 2, K1], [0, 3, T6]</p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>sarva-ātma-snapanaṁ: [0, 2, K1], [0, 3, T6]</p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>śrī-kṛṣṇa-saṅkīrtanam: [0, 2, K1], [0, 3, T6]</p>
+            </span>
+            
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">In the first verse, the first wonderful effects are explained and the author reveals the mystery at the very end that all these wonderful effects are due to Sri Krishna sankirtanam. To depict the mood of victory of sankritanam, the structure of the verse is very joyful. Every compound word ends with an action noun, creating a sense of movement in activity. </p>
+        </li>
+        <li style="height:2000px" class="slide2">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            नाम्नाम् अकारि बहुधा निज-सर्व-शक्तिस् <br />
+            तत्रार्पिता नियमितः स्मरणे न कालः | <br />
+            एतादृशी तव कृपा भगवन् ममापि <br />
+            दुर्-दैवम् ईदृशम् इहाजनि नानुरागः || 2 ||
+
+          </h4>
+          <h4 class="line_height2 margin_T1">
+            nāmnām akāri bahudhā nija-sarva-śaktis <br />
+            tatrārpitā niyamitaḥ smaraṇe na kālaḥ | <br />
+            etādṛśī tava kṛpā bhagavan mamāpi <br />
+            dur-daivam īdṛśam ihājani nānurāgaḥ || 2 ||
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">
+            nāmnām — of the holy names of the Lord; akāri — manifested; bahudhā — various kinds; <br />
+            nija-sarva-śaktiḥ — all kinds of personal potencies; tatra — in that; arpitā — bestowed; <br />
+            niyamitaḥ — restricted; smaraṇe — in remembering; na — not; kālaḥ — consideration of time;<br />
+            etādṛśī — so much; tava — Your; kṛpā — mercy; bhagavan — O Lord; mama — My; api — although; <br />
+            durdaivam — misfortune; īdṛśam — such; iha — in this (the holy name); ajani — was born;<br />
+            na — not; anurāgaḥ — attachment.
+          </p>
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“ ‘My Lord, O Supreme Personality of Godhead, in
+            Your holy name there is all good fortune for the living entity, and therefore You have many names, such as
+            “Kṛṣṇa” and “Govinda,” by which You expand Yourself. You have invested all Your potencies in those names,
+            and there are no hard and fast rules for remembering them. My dear Lord, although You bestow such mercy
+            upon the fallen, conditioned souls by liberally teaching Your holy names, I am so unfortunate that I
+            commit offenses while chanting the holy name, and therefore I do not achieve attachment for chanting.’
+          </p>
+        
+          <h4 class="line_height3">Morph-dep analysis</h4>
+          <table style="width:60%;line-height:14px;">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Word</th>
+                <th>Morph analysis</th>
+                <th>Dep analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>नाम्नाम्</td>
+                <td>नामन्{नपुं;6;एक}</td>
+                <td>षष्ठीसम्बन्ध,2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>अकारि</td>
+                <td>कृ{कर्मणि;लुङ्;प्र;एक;उभयपदी;डुकृञ्;तनादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>बहुधा</td>
+                <td>बहुधा{अव्य}</td>
+                <td>क्रियाविशेषणम्,2</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>निज-सर्व-शक्तिः</td>
+                <td>निज-सर्व-शक्ति{स्त्री;1;एक}</td>
+                <td>कर्म,6</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>तत्र</td>
+                <td>तत्र{अव्य}</td>
+                <td>अधिकरणम्,6</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>अर्पिता</td>
+                <td>अर्पित{नपुं;1;एक}{ऋ;णिच्;कृत्प्रत्ययः;क्त;डुकृञ्;तनादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>नियमितः</td>
+                <td>नियमित{पुं;1;एक}</td>
+                <td>क्रियाविशेषणम्,8</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>स्मरणे</td>
+                <td>स्मरण{नपुं;7;एक}</td>
+                <td>अधिकरणम्,10.1</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>न</td>
+                <td>नञ्{अव्य}</td>
+                <td>प्रतिषेधः,10.1</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>कालः</td>
+                <td>काल{पुं;1;एक}</td>
+                <td>कर्ता,10.1</td>
+              </tr>
+              <tr>
+                <td>10.1</td>
+                <td>(अस्ति)</td>
+                <td>भू{कर्तरि;लट्;प्र;एक;परस्मैपदी;अस्;अदादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>एतादृशी</td>
+                <td>एतादृशी{स्त्री;1;एक}</td>
+                <td>विशेषणम्,14</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>तव</td>
+                <td>युष्मद्{सर्वनाम;6;एक}</td>
+                <td>षष्ठीसम्बन्धः,13</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>कृपा</td>
+                <td>कृपा{स्त्री;1;एक}</td>
+                <td>कर्ता,14.1</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>भगवन्</td>
+                <td>भगवत्{पुं;8;एक}</td>
+                <td>सम्बोध्यः,14.1</td>
+              </tr>
+              <tr>
+                <td>14.1</td>
+                <td>(अस्ति)</td>
+                <td>भू{कर्तरि;लट्;प्र;एक;परस्मैपदी;अस्;अदादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>मम</td>
+                <td>अस्मद्{सर्वनाम;6;एक}</td>
+                <td>षष्ठीसम्बन्धः,17</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>अपि</td>
+                <td>अपि{अव्य}</td>
+                <td>सम्बन्धः,15</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>दुर्-दैवम्</td>
+                <td>दुर्दैव{नपुं;1;एक}</td>
+                <td>कर्ता,18.1</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>ईदृशम्</td>
+                <td>ईदृश{नपुं;1;एक}</td>
+                <td>विधेयविशेषणम्,18.1</td>
+              </tr>
+              <tr>
+                <td>18.1</td>
+                <td>(अस्ति)</td>
+                <td>भू{कर्तरि;लट्;प्र;एक;परस्मैपदी;अस्;अदादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>इह</td>
+                <td>इह{अव्य}</td>
+                <td>अधिकरणम्,20</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>अजनि</td>
+                <td>जन्{कर्मणि;लुङ्;प्र;एक;आत्मनेपदी;जनीँ;दिवादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>न</td>
+                <td>नञ्{अव्य}</td>
+                <td>प्रतिषेधः,20</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>अनुरागः</td>
+                <td>अनुराग{पुं;1;एक}</td>
+                <td>कर्ता,22</td>
+              </tr>
+            </tbody>
+            </table>
+          <!--<img src="images/shloka1_morp.jpg" style="width:500px; height:400px;"/>-->
+         
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2"> (त्वया)बहुधा नाम्नाम् अकारि, तत्र निजसर्वशक्तिः अर्पिता, (तथापि) नियमितः स्मरणे कालः
+            न (अस्ति)। भगवन् तव कृपा एतादृशी (अस्ति), ममापि ईदृशं दुर्दैवं (यत्) इह अनुरागः न अजनि। </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p>nija-sarva-śaktis: [1, 3, K1], [0, 3, bahuvreehi] </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>dur-daivam: [0, 2, pradi-tatpurusha]</p>
+            </span>
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">In the second verse, grammar is very complicated, where rarely occurring verbs are employed. The grammar structure is very formal to depict the mood of awe, reverence, or a sense of distance. Through this structure, the author wants to convey that you are great and I am very fallen. Whenever relation is formal (court proceedings, research talks, etc), very formal language is used. However, in the case of an intimate relationship between lovers, simple language is used. </p>
+        </li>
+        </li>
+        <li style="height:2000px" class="slide3">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            तृणाद् अपि सु-नीचेन <br />
+            तरोर् इव सहिष्णुना | <br />
+            अमानिना मान-देन <br />
+            कीर्तनीयः सदा हरिः || 3 ||
+
+          </h4>
+          <h4 class="line_height2 margin_T1">
+            tṛṇād api su-nīcena <br />
+            taror iva sahiṣṇunā | <br />
+            amāninā māna-dena <br />
+            kīrtanīyaḥ sadā hariḥ || 3 ||
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">
+            tṛṇāt api — than downtrodden grass; su-nīcena — being lower; taroḥ — than a tree; iva — like;  <br />
+            sahiṣṇunā — with tolerance; amāninā — without being puffed up by false pride; māna-dena —  <br />
+            giving respect to all; kīrtanīyaḥ — to be chanted; sadā — always; hariḥ — the holy name of the Lord.
+
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“ One who thinks himself lower than the grass, who is more tolerant than a tree, and who does not expect personal honor but is always prepared to give all respect to others can very easily always chant the holy name of the Lord."
+          </p>
+          <h4 class="line_height3">Morph-dep analysis</h4>
+          <table style="width:60%;line-height:14px;">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Word</th>
+                <th>Morph analysis</th>
+                <th>Dep analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>तृणात्</td>
+                <td>तृण{नपुं;1;एक}</td>
+                <td>विभक्तम्,3</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>अपि</td>
+                <td>अपि{अव्य}</td>
+                <td>सम्बन्धः,1</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>सु-नीचेन</td>
+                <td>सुनीच{पुं;3;एक}</td>
+                <td>सुप्_समुच्चितम्,8़</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>तरोः</td>
+                <td>तरु{पुं;6;एक}</td>
+                <td>षष्ठीसम्बन्धः,6</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>इव</td>
+                <td>इव{अव्य}</td>
+                <td>सम्बन्धः,4</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>सहिष्णुना</td>
+                <td>सहिष्णु{पुं;3;एक}</td>
+                <td>सुप्_समुच्चितम्,8़</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>अमानिना</td>
+                <td>अमानिन्{पुं;3;एक}</td>
+                <td>सुप्_समुच्चितम्,8़</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>मानदेन</td>
+                <td>मानद{पुं;3;एक}</td>
+                <td>कर्ता,9</td>
+              </tr>
+              <tr>
+                <td>8.1</td>
+                <td>(च)</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>कीर्तनीयः</td>
+                <td>कीर्तनीय{पुं;1;एक}{कॄत्;कृत्प्रत्ययः;अनीयर्;कॄतँ;चुरादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>सदा</td>
+                <td>सदा{अव्य}</td>
+                <td>अधिकरणम्,9</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>हरिः</td>
+                <td>हरि{पुं;1;एक}</td>
+                <td>कर्म,9</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2"> तृणाद् अपि सु-नीचेन तरोर् इव सहिष्णुना अमानिना मान-देन (च) सदा हरिः कीर्तनीयः </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p>su-nīcena: [0, 2, Tatpurusha]
+              </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>māna-dena: [0, 2, Tatpurusha] </p>
+            </span>
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem"> In the third verse, a key feature is brevity. This verse should be on everyone's neck. In other words, the author wants everyone should memorize this verse. To facilitate that, a straightforward structure is employed.</p>
+        </li>
+        <li style="height:2000px" class="slide4">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            न धनं न जनं न सुन्दरीं <br />
+            कवितां वा जगद्-ईश कामये | <br />
+            मम जन्मनि-जन्मनि ईश्वरे <br />
+            भवताद् भक्तिर् अ-हैतुकी त्वयि || 4 ||
+            
+
+          </h4>
+          <h4 class="line_height2 margin_T1">
+            na dhanaṁ na janaṁ na sundarīṁ <br />
+            kavitāṁ vā jagad-īśa kāmaye |  <br />
+            mama janmani-janmani īśvare <br />
+            bhavatād bhaktir a-haitukī tvayi || 4 ||
+
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">
+            na — not; dhanam — riches; na — not; janam — followers; na — not; sundarīm — a very  <br />
+            beautiful woman; kavitām — fruitive activities described in flowery language; vā — or; jagat-īśa  <br />
+            — O Lord of the universe; kāmaye — I desire; mama — My; janmani — in birth; janmani — after  <br />
+            birth; īśvare — unto the Supreme Personality of Godhead; bhavatāt — let there be; bhaktiḥ —   <br />
+            devotional service; ahaitukī — with no motives; tvayi — unto You.
+
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“O Lord of the universe, I do not desire material wealth, materialistic followers, a beautiful wife or fruitive activities described in flowery language. All I want, life after life, is unmotivated devotional service to You."
+          </p>
+          <h4 class="line_height3">Morph-dep analysis</h4>
+          <table style="width:60%;line-height:14px;">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Word</th>
+                <th>Morph analysis</th>
+                <th>Dep analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>न</td>
+                <td>नञ्{अव्य}</td>
+                <td>प्रतिषेधः,2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>धनम्</td>
+                <td>धन{नपुं;2;एक}</td>
+                <td>अन्यतरः,7</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>न</td>
+                <td>नञ्{अव्य}</td>
+                <td>प्रतिषेधः,3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>जनम्</td>
+                <td>जन{पुं;2;एक}</td>
+                <td>अन्यतरः,7</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>न</td>
+                <td>नञ्{अव्य}</td>
+                <td>प्रतिषेधः,7</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>सुन्दरीम्</td>
+                <td>सुन्दरी{स्त्री;2;एक}</td>
+                <td>विशेषणम्,7</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>कविताम्</td>
+                <td>कविता{स्त्री;2;एक}</td>
+                <td>कर्म,10</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>वा</td>
+                <td>वा{अव्य}</td>
+                <td>अन्यतरद्योतकः,7</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>जगद्-ईश</td>
+                <td>जगदीश{पुं;8;एक}</td>
+                <td>सम्बोध्यः,10</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>कामये</td>
+                <td>काम्{कर्तरि;लट्;उ;एक;आत्मनेपदी;कमुँ;भ्वादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>मम</td>
+                <td>अस्मद्{सर्वनाम;6;एक}</td>
+                <td>षष्ठीसम्बन्धः,13</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>जन्मनि</td>
+                <td>जन्मन्{नपुं;7;एक}</td>
+                <td>वीप्सा,13</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>जन्मनि</td>
+                <td>जन्मन्{नपुं;7;एक}</td>
+                <td>अधिकरणम्,15</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>ईश्वरे</td>
+                <td>ईश्वर{पुं;7;एक}</td>
+                <td>विशेषणम्,18</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>भवतात्</td>
+                <td>भू{कर्तरि;लोट्;प्र;एक;परस्मैपदी;भू;भ्वादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>भक्तिः</td>
+                <td>भक्ति{स्त्री;1;एक}</td>
+                <td>कर्ता,15</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>अ-हैतुकी</td>
+                <td>अहैतुकी{स्त्री;1;एक}</td>
+                <td>विशेषणम्,16</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>त्वयि</td>
+                <td>युष्मद्{सर्वनाम;7;एक}</td>
+                <td>अधिकरणम्,15</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2"> जगदीश (अहं) न धनं न जनं न सुन्दरीं कवितां वा कामये। मम अहैतुकी भक्तिः जन्मनि जन्मनि त्वयि ईश्वरे भवतात्। </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p>jagad-īśa : [0, 2, T6]
+              </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>janmani-janmani: [0, 2, vipsa]
+              </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>a-haitukī: [0, 2, nay_tatpurusha]
+              </p>
+            </span>
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">In the fourth verse, there is a powerful correlation between King Kulsheshara's Mukund Mala Stotram composition. It shows the strong influence of alvar sampradaya (school) on the Bhakti school. Here, ``kavita" word produces beautiful interpretations. Based on different commentators, it can be treated as a beautiful flowery language used in the Karma Kanda section of Vedas or it can be treated as the adjective of ``Sundari" which means beautiful women described in the poetry or ideal female figure. </p>
+        </li>
+        <li style="height:2000px" class="slide5">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            अयि नन्द-तनुज किङ्-करं <br />
+            पतितं मां विषमे भव-अम्बुधौ | <br />
+            कृपया तव पाद-पङ्कज- <br />
+            स्थित-धूली-सदृशं विचिन्तय || 5 ||
+
+          </h4>
+          <h4 class="line_height2 margin_T1">
+            ayi nanda-tanuja kiṅ-karaṁ <br />
+            patitaṁ māṁ viṣame bhava-ambudhau | <br />
+            kṛpayā tava pāda-paṅkaja- <br />
+            sthita-dhūlī-sadṛśaṁ vicintaya || 5 ||
+
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">
+            ayi — O My Lord; nanda-tanuja — the son of Nanda Mahārāja, Kṛṣṇa; kiṅkaram — the servant;  <br />
+            patitam — fallen; mām — Me; viṣame — horrible; bhava-ambudhau — in the ocean of  <br />
+            nescience; kṛpayā — by causeless mercy; tava — Your; pāda-paṅkaja — lotus feet; sthita —  <br />
+            situated at; dhūlī-sadṛśam — like a particle of dust; vicintaya — kindly consider.
+
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“O My Lord, O Kṛṣṇa, son of Mahārāja Nanda, I am Your eternal servant, but because of My own fruitive acts I have fallen into this horrible ocean of nescience. Now please be causelessly merciful to Me. Consider Me a particle of dust at Your lotus feet."
+          </p>
+          <h4 class="line_height3">Morph-dep analysis</h4>
+          <table style="width:60%;line-height:14px;">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Word</th>
+                <th>Morph analysis</th>
+                <th>Dep analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>अयि</td>
+                <td>अयि{अव्य}</td>
+                <td>सम्बोध्यवाचकः,2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>नन्द-तनुज</td>
+                <td>नन्द-तनुज{पुं;8;एक}</td>
+                <td>सम्बोध्यः,11</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>किङ्करम्</td>
+                <td>किङ्कर{पुं;2;एक}</td>
+                <td>विशेषणम्,5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>पतितम्</td>
+                <td>पतित{पुं;2;एक}</td>
+                <td>विशेषणम्,5</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>माम्</td>
+                <td>अस्मद्{सर्वनाम;2;एक}</td>
+                <td>कर्म,11</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>विषमे</td>
+                <td>विषम{पुं;7;एक}</td>
+                <td>विशेषणम्,7</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>भव-अम्बुधौ</td>
+                <td>भव-अम्बुधि{पुं;7;एक}</td>
+                <td>अधिकरणम्,4</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>कृपया</td>
+                <td>कृपा{स्त्री;3;एक}</td>
+                <td>क्रियाविशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>तव</td>
+                <td>युष्मद्{सर्वनाम;6;एक}</td>
+                <td>षष्ठीसम्बन्धः,10</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>पाद-पङ्कज-स्थित-धूली-सदृशम्</td>
+                <td>पाद-पङ्कज-स्थित-धूली-सदृशम{पुं;2;एक}</td>
+                <td>विधेयविशेषणम्,11</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>विचिन्तय</td>
+                <td>चित्{कर्तरि;लोट्;म;एक;परस्मैपदी;चितिँ;चुरादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>जन्मनि</td>
+                <td>जन्मन्{नपुं;7;एक}</td>
+                <td>वीप्सा,13</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>जन्मनि</td>
+                <td>जन्मन्{नपुं;7;एक}</td>
+                <td>अधिकरणम्,15</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>ईश्वरे</td>
+                <td>ईश्वर{पुं;7;एक}</td>
+                <td>विशेषणम्,18</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>भवतात्</td>
+                <td>भू{कर्तरि;लोट्;प्र;एक;परस्मैपदी;भू;भ्वादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>भक्तिः</td>
+                <td>भक्ति{स्त्री;1;एक}</td>
+                <td>कर्ता,15</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>अ-हैतुकी</td>
+                <td>अहैतुकी{स्त्री;1;एक}</td>
+                <td>विशेषणम्,16</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>त्वयि</td>
+                <td>युष्मद्{सर्वनाम;7;एक}</td>
+                <td>अधिकरणम्,15</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2"> अयि नन्दतनुज (त्वम्) विषमे भवाम्बुधौ पतितं किङ्करं मां कृपया तव पाद-पङ्कज-स्थित-धूली-सदृशं विचिन्तय </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p> nanda-tanuja: [0, 2, T6]
+              </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>kiṅ-karaṁ: [0, 2, upapada_tatpurusha]
+              </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>bhava-ambudhau: [0, 2, avdhanapurvakaramadharay]
+              </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>pāda-paṅkaja-sthita-dhūlī-sadṛśaṁ: [0, 2, upmana uttarpada karmadharaya ], [0, 3, T7], [3, 5 ,T3] ,[0, 5, K1]
+              </p>
+            </span>
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">In the fifth verse, we can observe that intimacy has increased. The first time, beloved is called using the personal name ``Nanda tanooja" (the son of Kind Nanda). Earlier, the author mentioned the very formal and generic name of the beloved Lord. Here, beautiful contrast is depicted. The author says you are so great that he immediately calls himself the most fallen (kimkar).  </p>
+        </li>
+        <li style="height:2000px" class="slide6">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            नयनं गलद्-अश्रु-धारया <br />
+            वदनं गद्गद-रुद्धया गिरा | <br />
+            पुलकैर् निचितं वपुः कदा <br />
+            तव नाम-ग्रहणे भविष्यति || 6 ||
+
+
+          </h4>
+          <h4 class="line_height2 margin_T1">
+            nayanaṁ galad-aśru-dhārayā <br />
+            vadanaṁ gadgada-ruddhayā girā | <br />
+            pulakair nicitaṁ vapuḥ kadā <br />
+            tava nāma-grahaṇe bhaviṣyati || 6 ||
+
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">
+            nayanam — the eyes; galat-aśru-dhārayā — by streams of tears running down; vadanam —  <br />
+            mouth; gadgada — faltering; ruddhayā — choked up; girā — with words; pulakaiḥ — with  <br />
+            erection of the hairs due to transcendental happiness; nicitam — covered; vapuḥ — the body; <br />
+            kadā — when; tava — Your; nāma-grahaṇe — in chanting the name; bhaviṣyati — will be.
+
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“My dear Lord, when will My eyes be beautified by filling with tears that constantly glide down as I chant Your holy name? When will My voice falter and all the hairs on My body stand erect in transcendental happiness as I chant Your holy name?"
+          </p>
+          <h4 class="line_height3">Morph-dep analysis</h4>
+          <table style="width:60%;line-height:14px;">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Word</th>
+                <th>Morph analysis</th>
+                <th>Dep analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>नयनम्</td>
+                <td>नयन{नपुं;1;एक}</td>
+                <td>कर्म,7</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>गलद्-अश्रु-धारया</td>
+                <td>गलद्-अश्रु-धारा{स्त्री;3;एक}</td>
+                <td>करणम्,7</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>वदनम्</td>
+                <td>वदन{नपुं;1;एक}</td>
+                <td>कर्म,7</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>गद्गद-रुद्धया</td>
+                <td>गद्गदरुद्धा{स्त्री;3;एक}</td>
+                <td>विशेषणम्,5</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>गिरा</td>
+                <td>गिर्{स्त्री;3;एक}</td>
+                <td>करणम्,7</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>पुलकैः</td>
+                <td>पुलक{पुं;3;एक}</td>
+                <td>करणम्,7</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>निचितम्</td>
+                <td>नि_चि{नपुं;1;एक}{चिञ्;कृत्प्रत्ययः;क्त;स्वादिः}</td>
+                <td>कर्ता,12</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>वपुः</td>
+                <td>वपुष्{नपुं;1;एक}</td>
+                <td>कर्म,7</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>कदा</td>
+                <td>कदा{अव्य}</td>
+                <td>अधिकरणम्,12</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>तव</td>
+                <td>युष्मद्{सर्वनाम;6;एक}</td>
+                <td>षष्ठीसम्बन्धः,11</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>नाम-ग्रहणे</td>
+                <td>नामग्रहण{नपुं;7;एक}</td>
+                <td>भावलक्षणसप्तमी_पूर्वकालः,12</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>भविष्यति</td>
+                <td>भू{कर्तरि;लृट्;प्र;एक;परस्मैपदी;भू;भ्वादिः}</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2"> कदा तव नामग्रहणे(सति) गलदश्रुधारया नयनं गद्गदरुद्धया गिरा वदनं पुलकैः (च) वपुः निचितं भविष्यति
+          </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p> galad-aśru-dhārayā: [0, 3, bahuvreehi]
+              </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>gadgada-ruddhayā: [0, 2, T3]</p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>nāma-grahaṇe: [0, 2, T6]</p>
+            </span>
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">The sixth verse depicts the intense mood of separation. The author is longing for such an experience to happen. In the separation, the presence of a lover is more substantial than his physical presence. Although beloved is not with the author physically, beloved is still present with him. This is a beautiful contrast.  </p>
+        </li>
+        <li style="height:2000px" class="slide7">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            युगायितं निमेषेण <br />
+            चक्षुषा प्रावृषायितम् | <br />
+            शून्यायितं जगत् सर्वं <br />
+            गोविन्द-विरहेण मे || 7 ||
+
+
+          </h4>
+          <h4 class="line_height2 margin_T1">
+            yugāyitaṁ nimeṣeṇa <br />
+            cakṣuṣā prāvṛṣāyitam | <br />
+            śūnyāyitaṁ jagat sarvaṁ <br />
+            govinda-viraheṇa me || 7 ||
+            
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">
+            yugāyitam — appearing like a great millennium; nimeṣeṇa — by a moment; cakṣuṣā — from the  <br />
+            eyes; prāvṛṣāyitam — tears falling like torrents of rain; śūnyāyitam — appearing void; jagat —  <br />
+            the world; sarvam — all; govinda — from Lord Govinda, Kṛṣṇa; viraheṇa me — by My separation.
+
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“My Lord Govinda, because of separation from You, I consider even a moment a great millennium. Tears flow from My eyes like torrents of rain, and I see the entire world as void."
+          </p>
+          <h4 class="line_height3">Morph-dep analysis</h4>
+          <table style="width:60%;line-height:14px;">
+            <thead>
+            <tr>
+              <th>No</th>
+              <th>Word</th>
+              <th>Morph analysis</th>
+              <th>Dep analysis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>युगायितम्</td>
+              <td>युगायित{नपुं;1;एक}{युगाय;कृत्प्रत्ययः;क्त;सनादिप्रत्ययः;क्यच्}</td>
+              <td>समुच्चितम्,5</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>निमेषेण</td>
+              <td>निमेष{पुं;3;एक}</td>
+              <td>कर्ता,1</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>चक्षुषा</td>
+              <td>चक्षुष्{नपुं;3;एक}</td>
+              <td>कर्ता,4</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>प्रावृषायितम्</td>
+              <td>प्रावृषायित{नपुं;1;एक}{प्रावृषाय;कृत्प्रत्ययः;क्त;सनादिप्रत्ययः;क्यच्}</td>
+              <td>समुच्चितम्,5</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>शून्यायितम्</td>
+              <td>शून्यायित{नपुं;1;एक}{शून्याय;कृत्प्रत्ययः;क्त;सनादिप्रत्ययः;क्यच्}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>5.1</td>
+              <td>(च)</td>
+              <td>च{अवय}</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>जगत्</td>
+              <td>जगद्{नपुं;1;एक}</td>
+              <td>कर्ता,5</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>सर्वम्</td>
+              <td>सर्व{नपुं;1;एक}</td>
+              <td>विशेषणम्,6</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>गोविन्द-विरहेण</td>
+              <td>गोविन्दविरह{पुं;3;एक}</td>
+              <td>हेतुः,5</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>मे</td>
+              <td>अस्मद्{सर्वनाम;6;एक}</td>
+              <td>षष्ठीसम्बन्धः,6</td>
+            </tr>
+          </tbody>
+          </table>
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2">गोविन्दविरहेण मे सर्वं जगत् निमेषेण युगायितं चक्षुषा प्रावृषायितं शून्यायितं (भवति)।  </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p>govinda-viraheṇa: [0, 2, T6] </p>
+            </span>
+    
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">In the seventh verse, beautiful contrast (millennium vs moment, eyes vs monsoon, zero vs everything) is illustrated to express the separation of beloved.  This juxtaposition of opposites creates powerful imagery in the reader's mind leading to cognitive dissonance. The last line is beginning with Govinda and it is preparing the ground for blaming the beloved Krishna. </p>
+        </li>
+        <li style="height:2000px" class="slide8">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            आश्लिष्य वा पाद-रतां पिनष्टु माम् <br />
+            अ-दर्शनान् मर्म-हतां करोतु वा | <br />
+            यथा तथा वा विदधातु लम्पटो <br />
+            मत्-प्राण-नाथस् तु स एव नापरः || 8 ||
+            
+            
+
+          </h4>
+          <h4 class="line_height2 margin_T1">
+            āśliṣya vā pāda-ratāṁ pinaṣṭu mām <br />
+            a-darśanān marma-hatāṁ karotu vā |  <br />
+            yathā tathā vā vidadhātu lampaṭo <br />
+            mat-prāṇa-nāthas tu sa eva nāparaḥ || 8 ||
+
+          </h4>
+          <h4 class="line_height2 margin_T1">Synonyms</h4>
+          <p class="line_height2 margin_T1">
+            āśliṣya — embracing with great pleasure; vā — or; pāda-ratām — who have fallen at the lotus  <br />
+            feet; pinaṣṭu — let Him trample; mām — Me; adarśanāt — by not being visible; marma-hatām —  <br />
+            brokenhearted; karotu — let Him make; vā — or; yathā — as (He likes); tathā — so; vā — or;  <br />
+            vidadhātu — let Him do; lampaṭaḥ — a debauchee, who mixes with other women;  <br />
+            mat-prāṇa-nāthaḥ — the Lord of My life; tu — but; saḥ — He; eva — only; na aparaḥ — not anyone else.
+
+          <h4 class="line_height2 margin_T1">Translation</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">“Let Kṛṣṇa tightly embrace this maidservant who has fallen at His lotus feet, or let Him trample Me or break My heart by never being visible to Me. He is a debauchee, after all, and can do whatever He likes, but still He alone, and no one else, is the worshipable Lord of My heart."
+          </p>
+          <h4 class="line_height3">Morph-dep analysis</h4>
+          <table style="width:60%;line-height:14px;">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Word</th>
+                <th>Morph analysis</th>
+                <th>Dep analysis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>आश्लिष्य</td>
+                <td><br>आ_श्लिष्{अव्य;ल्यप्;श्लिषँ;दिवादिः}</td>
+                <td>पूर्वकालः,4</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>वा</td>
+                <td>वा{अव्य}</td>
+                <td>अन्यतरद्योतकः,4</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>पाद-रताम्</td>
+                <td>पादरता{स्त्री;2;एक}</td>
+                <td>विशेषणम,5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>पिनष्टु</td>
+                <td>पिष्{कर्तरि;लोट्;प्र;एक;परस्मैपदी;पिषॢँ;रुधादिः}</td>
+                <td>अन्यतरः,13</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>माम्</td>
+                <td>अस्मद्{सर्वनाम;2;एक}</td>
+                <td>कर्म,4</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>अ-दर्शनाम्</td>
+                <td>अदर्शना{स्त्री;2;एक}</td>
+                <td>विशेषणम,7</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>मर्म-हताम्</td>
+                <td>मर्महता{स्त्री;2;एक}</td>
+                <td>कर्म,8</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>करोतु</td>
+                <td>कृ{कर्तरि;लोट्;प्र;एक;उभयपदी;कृ;तनादिः}</td>
+                <td>अन्यतरः,13</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>वा</td>
+                <td>वा{अव्य}</td>
+                <td>अन्यतरद्योतकः,8</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>यथा</td>
+                <td>यथा{अव्य}</td>
+                <td>क्रियाविशेषणम्,13</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>तथा</td>
+                <td>तथा{अव्य}</td>
+                <td>क्रियाविशेषणम्,13</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>वा</td>
+                <td>वा{अव्य}</td>
+                <td>अन्यतरद्योतकः,13</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>विदधातु</td>
+                <td>वि_धा{कर्तरि;लोट्;प्र;एक;उभयपदी;वि_धा;जुहोत्यादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>लम्पटः</td>
+                <td>लम्पट{पुं;1;एक}</td>
+                <td>विशेषणम,17</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>मत्-प्राण-नाथः</td>
+                <td>मत्प्राणनाथ{पुं;1;एक}</td>
+                <td>विधेयविशेषणम्,18.1</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>तु</td>
+                <td>तु{अव्य}</td>
+                <td>सम्बन्धः,18.1</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>सः</td>
+                <td>तद्{पुं;1;एक}</td>
+                <td>कर्ता,18.1</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>एव</td>
+                <td>एव{अव्य}</td>
+                <td>सम्बन्धः,18.1</td>
+              </tr>
+              <tr>
+                <td>18.1</td>
+                <td>(अस्ति)</td>
+                <td>भू{कर्तरि;लट्;प्र;एक;परस्मैपदी;अस्;अदादिः}</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>न</td>
+                <td>नञ्{अव्य}</td>
+                <td>प्रतिषेधः,20.1</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>अपरः</td>
+                <td>अपर{पुं;1;एक}</td>
+                <td>कर्ता,20.1</td>
+              </tr>
+              <tr>
+                <td>20.1</td>
+                <td>(अस्ति)</td>
+                <td>भू{कर्तरि;लट्;प्र;एक;परस्मैपदी;अस्;अदादिः}</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 class="line_height3">Anvaya analysis</h4>
+          <p class="line_height2">माम् आश्लिष्य पादरतां पिनष्टु वा अदर्शनां मर्महतां करोतु वा यथा तथा वा विदधातु स एव तु लम्पटः मत्प्राणनाथः (अस्ति) अपरः न (अस्ति)। </p>
+          <h4 class="line_height3">Compound Tagging </h4>
+          <div class="align_flex_start">
+            <span>
+              <p>&#8226;</p>
+              <p>pāda-ratāṁ: [0, 2, T3] </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>a-darśanān: [0, 2, nay-tatpurusha] </p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>marma-hatāṁ: [0, 2, T3]</p>
+            </span>
+            <span>
+              <p>&#8226;</p>
+              <p>mat-prāṇa-nāthas: [0, 2, T6], [0, 3, T6]</p>
+            </span>
+          </div>
+          <h4 class="line_height3">Structural beauty</h4>
+          <p class="line_height2 margin_T1" style="padding:0 3rem">In the last verse, another interpretation is also possible. The author is accusing his beloved Lord. You have crushed me with your strong embrace and thrown me away. That's why I have fallen to your feet. I know that you are a womanizer. Do not think that I am unaware of this fact. You can do whatever you like, but I do not have any other option; you are the only my beloved. Here, we see that there is no awe and reverence there, and extreme intimacy is portrayed. </p>
+        </li>
+      </ul>
+    </div>
+
+    <div id="metrical_analysis_slider" class="hide_slider">
+  
+      <p class="control_next" onclick="moveRight('metrical_analysis_slider');"><i class="fa fa-angle-right"></i>
+      <p>
+      <p class="control_prev" onclick="moveLeft('metrical_analysis_slider');"><i class="fa fa-angle-left"></i></p>
+      <ul>
+        <li style="height:1200px" class="slide1">
+          <h4 style="line-height:2; margin: 1rem 0;">चेतो-दर्पण-मार्जनं भव-महा-दावाग्नि-निर्वापणं <br />
+            श्रेयः-कैरव-चन्द्रिका-वितरणं विद्या-वधू-जीवनम् | <br />
+            आनन्दाम्बुधि-वर्धनं प्रति-पदं पूर्णामृतास्वादनं<br />
+            सर्वात्म-स्नपनं परं विजयते श्री-कृष्ण-सङ्कीर्तनम् || 1 ||
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b> शार्दूलविक्रीडित </span>
+          <p class="padding_LR3 line_height2"><b>About this meter:</b> Śārdūlavikrīḍitam is the most majestic meter. It
+            is a playful walking style of tiger. Generally preferred in the invocation. Examples, जन्माद्यस्य
+            यतोऽन्वयादितरतश्चार्थेष्वभिज्ञ: स्वराट्, Chanda shastra does not talk explicitly about the correlation of
+            choice of chanda and mood. Based on generic observations, it expresses devotion and prosperity.
+          </p>
+           <img src="images/M1.png" style="width:600px;"/>
+        </li>
+        <li style="height:1200px"  class="slide2">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            नाम्नाम् अकारि बहुधा निज-सर्व-शक्तिस् <br />
+            तत्रार्पिता नियमितः स्मरणे न कालः | <br />
+            एतादृशी तव कृपा भगवन् ममापि <br />
+            दुर्-दैवम् ईदृशम् इहाजनि नानुरागः || 2 ||
+
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b>Vasanta Tilaka  </span>
+          <p class="padding_LR3 line_height2">
+            <b>About this meter:</b> Without any break, every foot can be easily recited. This indicates the niryatitva of the meter.
+
+          </p>
+           <img src="images/M2.png" style="width:600px;"/>
+        </li>
+        <li style="height:1200px"  class="slide3">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            तृणाद् अपि सु-नीचेन <br />
+            तरोर् इव सहिष्णुना | <br />
+            अमानिना मान-देन <br />
+            कीर्तनीयः सदा हरिः || 3 ||
+
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b> Anuṣṭup </span>
+          <p class="padding_LR3 line_height2">
+            <b>About this meter:</b> Anuṣṭup is technically a generic name for meters of eight letters, and among the anuṣṭup varieties, it is the śloka that is the most important, beautiful, and popular.
+            Such is its popularity that often every Sanskrit verse is termed as śloka.
+            
+          </p>
+           <img src="images/M3.png" style="width:600px;"/>
+        </li>
+        <li style="height:1200px"  class="slide4">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            न धनं न जनं न सुन्दरीं <br />
+            कवितां वा जगद्-ईश कामये | <br />
+            मम जन्मनि-जन्मनि ईश्वरे <br />
+            भवताद् भक्तिर् अ-हैतुकी त्वयि || 4 ||
+            
+
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b>Viyogini  </span>
+          <p class="padding_LR3 line_height2">
+            <b>About this meter:</b> Viyoginī has been employed by Vālmīki too. Here none can feel any pause in any of the feet, and so it is a niryati metre.  It is soft and musical.
+          </p>
+           <img src="images/M4.png" style="width:600px;"/>
+        </li>
+        <li style="height:1200px"  class="slide5">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            अयि नन्द-तनुज किङ्-करं <br />
+            पतितं मां विषमे भव-अम्बुधौ | <br />
+            कृपया तव पाद-पङ्कज- <br />
+            स्थित-धूली-सदृशं विचिन्तय || 5 ||
+
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b>Viyogini  </span>
+          <p class="padding_LR3 line_height2">
+            <b>About this meter:</b>  Viyoginī has been employed by Vālmīki too. Here none can feel any pause in any of the feet, and so it is a niryati metre.  It is soft and musical.
+          </p>
+           <img src="images/M5.png" style="width:600px;"/>
+        </li>
+        <li style="height:1200px"  class="slide6">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            नयनं गलद्-अश्रु-धारया <br />
+            वदनं गद्गद-रुद्धया गिरा | <br />
+            पुलकैर् निचितं वपुः कदा <br />
+            तव नाम-ग्रहणे भविष्यति || 6 ||
+
+
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b>Viyogini  </span>
+          <p class="padding_LR3 line_height2">
+            <b>About this meter:</b> Viyoginī has been employed by Vālmīki too. Here none can feel any pause in any of the feet, and so it is a niryati metre.  It is soft and musical. 
+          </p>
+           <img src="images/M6.png" style="width:600px;"/>
+        </li>
+        <li style="height:1200px"  class="slide7">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            युगायितं निमेषेण <br />
+            चक्षुषा प्रावृषायितम् | <br />
+            शून्यायितं जगत् सर्वं <br />
+            गोविन्द-विरहेण मे || 7 ||
+
+
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b>Anuṣṭup  </span>
+          <p class="padding_LR3 line_height2">
+            <b>About this meter:</b>  Anuṣṭup is technically a generic name for meters of eight letters, and among the anuṣṭup varieties, it is the śloka that is the most important, beautiful, and popular.
+            Such is its popularity that often every Sanskrit verse is termed as śloka.
+            
+          </p>
+          
+           <img src="images/M7.png" style="width:600px;"/>
+        </li>
+        <li style="height:1200px"  class="slide8">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            आश्लिष्य वा पाद-रतां पिनष्टु माम् <br />
+            अ-दर्शनान् मर्म-हतां करोतु वा | <br />
+            यथा तथा वा विदधातु लम्पटो <br />
+            मत्-प्राण-नाथस् तु स एव नापरः || 8 ||
+            
+            
+
+          </h4>
+          <h4 class="line_height3">Metrical analysis</h4>
+          <span class="line_height3"><b>Meter:</b>Upajati (Indravamsha + Vamshasta)</span>
+          <p class="padding_LR3 line_height2">
+            <b>About this meter:</b> The only difference between Indravaṃśa and Vaṃśastha is in the first letter. In all these meters seen so far, we know that the yati or caesura is very feeble or weak, and that is why such meters are called yati-durbala. They can be recited without stopping at any specific point.
+          </p>
+           <img src="images/M8.png" style="width:600px;"/>
+        </li>
+      </ul>
+    </div>
+    <div id="alankar_analysis_slider" class="hide_slider">
+      <p class="control_next" onclick="moveRight('alankar_analysis_slider');"><i class="fa fa-angle-right"></i>
+      <p>
+      <p class="control_prev" onclick="moveLeft('alankar_analysis_slider');"><i class="fa fa-angle-left"></i></p>
+      <ul>
+        <li style="height:500px" class="slide1">
+          <h4 style="line-height:2; margin: 1rem 0;">चेतो-दर्पण-मार्जनं भव-महा-दावाग्नि-निर्वापणं <br />
+            श्रेयः-कैरव-चन्द्रिका-वितरणं विद्या-वधू-जीवनम् | <br />
+            आनन्दाम्बुधि-वर्धनं प्रति-पदं पूर्णामृतास्वादनं<br />
+            सर्वात्म-स्नपनं परं विजयते श्री-कृष्ण-सङ्कीर्तनम् || 1 ||
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b> Malarupakam, anupras [Antyanupras, shrutyanupras] </span>
+          <p class="padding_LR3 line_height2"><b>Description</b> The author uses a series of 5 metaphors to describe the victory of Sri Krishna Sankirtanam. The use of these metaphors creates a garland-like effect, which serves as an offering to acknowledge the victory of Sri Krishna Sankirtanam. Additionally, the use of Antyanupras Shabdalankar (a figure of speech where every word ends with a similar suffix) creates a rhythmic effect.
+          </p>
+         
+        </li>
+        <li class="slide2">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            नाम्नाम् अकारि बहुधा निज-सर्व-शक्तिस् <br />
+            तत्रार्पिता नियमितः स्मरणे न कालः | <br />
+            एतादृशी तव कृपा भगवन् ममापि <br />
+            दुर्-दैवम् ईदृशम् इहाजनि नानुरागः || 2 ||
+
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b>Vrityanupras, Uktanimita Visheshyokti (Virodha mulak arthalamkar) </span>
+          <p class="padding_LR3 line_height2"><b>Description</b> The author expresses his sorrow at not having an attachment to such a glorious Sankirtanam, where the Lord invests all his potencies without keeping any rules and regulations. Although there is every reason to get attached to such Sankirtanam, the author cannot get attached, which is expressed through Uktanimita Visheshyokti alankar. This alankara is used to denote that all the causes are present for action to happen, yet the action doesn’t occur.
+          </p>
+          <!-- <img src="images/shloka1_morp.jpg" style="width:500px; height:400px;"/> -->
+        </li>
+        <li class="slide3">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            तृणाद् अपि सु-नीचेन <br />
+            तरोर् इव सहिष्णुना | <br />
+            अमानिना मान-देन <br />
+            कीर्तनीयः सदा हरिः || 3 ||
+
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b>Shrutyanupras, Chekanupras, Vyatirek alamkar
+          </span>
+          <p class="padding_LR3 line_height2"><b>Description</b> The author talks about the prerequisites of developing attachment for the Sankirtanam, which are humility and tolerance. The author employs Vyatireka alankar to embellish this verse by comparing humility with a grass and tolerance with a tree. In this figure of speech, the subject of illustration (upamana) has more qualities than the subject of comparison (upameya). Thus, the author says that one should be lower than a grass and more tolerant than a tree. 
+          </p>
+        </li>
+        <li class="slide4">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            न धनं न जनं न सुन्दरीं <br />
+            कवितां वा जगद्-ईश कामये | <br />
+            मम जन्मनि-जन्मनि ईश्वरे <br />
+            भवताद् भक्तिर् अ-हैतुकी त्वयि || 4 ||
+            
+
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b> Latanupras, Vrutyanupras, tulyayogitā </span>
+          <p class="padding_LR3 line_height2"><b>Description</b>  the author says that one should be lower than a grass and more tolerant than a tree.
+            In the fourth verse, multiple things (wealth, followers, beautiful women and flowery language of Vedas) are coupled with a single property "na kamaye" (do not desire). This device is called tulyayogitā alankara.
+          </p>
+        </li>
+        <li class="slide5">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            अयि नन्द-तनुज किङ्-करं <br />
+            पतितं मां विषमे भव-अम्बुधौ | <br />
+            कृपया तव पाद-पङ्कज- <br />
+            स्थित-धूली-सदृशं विचिन्तय || 5 ||
+
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b> Anupras, Upama (dhuli and kimkar), Rupak (pada-pankaj)</span>
+          <p class="padding_LR3 line_height2"><b>Description</b> In the fifth verse, the author beautifully couples metaphor and simile to express his eternal servitude to Lord Govinda. The author compares the way water drops fall from a lotus into the mud, similarly, he has fallen from Lord Govinda's lotus feet to the ocean of nescience (material existence) as a dust-like servant. The author requests Lord Govinda to place him back at his lotus feet.
+          </p>
+        </li>
+        <li class="slide6">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            नयनं गलद्-अश्रु-धारया <br />
+            वदनं गद्गद-रुद्धया गिरा | <br />
+            पुलकैर् निचितं वपुः कदा <br />
+            तव नाम-ग्रहणे भविष्यति || 6 ||
+
+
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b>Anupras, tulyayogitā </span>
+          <p class="padding_LR3 line_height2"><b>Description</b> In the six verse, again tulyayogitā alankar is employed to connect different symptoms mentioned to a single property.
+          </p>
+        </li>
+        <li class="slide7">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            युगायितं निमेषेण <br />
+            चक्षुषा प्रावृषायितम् | <br />
+            शून्यायितं जगत् सर्वं <br />
+            गोविन्द-विरहेण मे || 7 ||
+
+
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b>Malopama </span>
+          <p class="padding_LR3 line_height2"><b>Description</b> In the seventh verse, the author expresses his intense separation from Lord Govinda by deploying three similes (upama alankar). The author uses these similes to express his love in the mood of separation. He compares a moment to a great millennium, his tears to torrents of rain, and the entire world to void. This garland of similes (malopama alankar) serves as an offering to express the author's love for Lord Govinda.
+          </p>
+        </li>
+        <li class="slide8">
+          <h4 class="line_height2" style="margin: 1rem 0;">
+            आश्लिष्य वा पाद-रतां पिनष्टु माम् <br />
+            अ-दर्शनान् मर्म-हतां करोतु वा | <br />
+            यथा तथा वा विदधातु लम्पटो <br />
+            मत्-प्राण-नाथस् तु स एव नापरः || 8 ||
+            
+            
+
+          </h4>
+          <h4 class="line_height3">Alankara analysis</h4>
+          <span class="line_height3"><b>Alankara:</b>anuktanimitta-viśeṣokti, Anupras </span>
+          <p class="padding_LR3 line_height2"><b>Description</b> The final verse employs the anuktanimitta-viśeṣokti device, wherein a condition is expressed but the consequent effect is absent, and no explanation is offered for the lack of effect. This constitutes the anukati-nimit alankar. The author enumerates several potential causes for being despised, yet the anticipated outcome of animosity does not manifest. Despite hatred conditions, the author maintains devotion to the lord. The rationale for the absence of hatred is not mentioned here.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="auchitya_school" class="hero1 analysis_summary">
+      <h2>Auchitya school</h2>
+      <div class="align_left">
+        <h3>Basics</h3>
+        <ul>
+          <li>Kshemendra introduced the concept of auchitya in his work Auchitya Vichar Charcha.</li>
+          <li>Auchitya means appropriateness and regulates all aspects of Natya Shastra.</li>
+          <li>Auchitya aids writers in delivering their ideas effectively. </li>
+          <li>Categorized into several classes by Kshemendra: Pada, Vakya, Prabhandhanartha, Guna, Alankara, Rasa.</li>
+        </ul>
+        <p class="margin_B2">In conclusion, auchitya is an essential tool for writers, enabling them to compose
+          beautiful poetry by using the elements of poetry in an appropriate manner.</p>
+        <h3>Analysis</h3>
+        <ul>
+          <li>Shikshashtakam is an exemplary composition that demonstrates auchitya.</li>
+          <li>Uses Vipralamba Sringar rasa, Vaidarbhi reeti, and Madhurya guna perfectly.</li>
+          <li>Alankaras used in an appropriate manner without overwhelming the expression of the rasa. </li>
+          <li>Rasa remains consistent and intensifies gradually throughout the composition.</li>
+          <li>Reaches its pinnacle in the last verse. </li>
+          <li>Uniformity in the rasa's expression contributes to the effectiveness of the composition. </li>
+          <li>Evokes the desired emotional response effectively.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="vakrokti_school" style="height:800px" class="hero1 analysis_summary">
+      <h2>Vakrokti school</h2>
+      <div class="align_left">
+        <h3>Basics</h3>
+        <ul>
+          <li>Kuntaka's Vakrokti school emphasizes the use of oblique expressions in poetry</li>
+          <li>Vakroti Jivika lays out the principles and classifies the levels of expression into six categories
+          </li>
+          <li>The six categories are:  phonetic figurativeness, lexical figurativeness, sentential figurativeness, contextual figurativeness, sectional figurativeness, and  compositional figurativeness.
+          </li>
+          <li>Vakrokti is considered the soul of poetry, and the only embellishment possible to the word and its meaning</li>
+          <li>Mastery of the six levels of expression is fundamental to creating effective poetry in the Vakroti school</li>
+          <li>Use of Vakrokti is essential to creating effective poetry</li>
+        </ul>
+        <p class="margin_B2"></p>
+
+        <h3>Analysis</h3>
+        <ul>
+          <li>The analysis focuses on the use of oblique expressions in Shikshashtakam.
+          </li>
+          <li>Six categories of oblique expressions are identified in the poem.
+          </li>
+          <li>The first category is phonetic figurativeness, which enhances the poetic sound using anupras alankar.</li>
+          <li>The second category is lexical figurativeness, which uses Rupak alankara at the level of individual words.</li>
+          <li>The third category is sentential figurativeness, which uses arthalankaras at the level of sentences.</li>
+          <li>The fourth category is contextual figurativeness, which relies on the poem's context and uses Rupaka alankaras to create a garland-like effect.
+          </li>
+          <li>The fifth category is sectional figurativeness, which involves the twist in the chapter arrangement of the poetry.</li>
+          <li>The sixth category is compositional figurativeness, which involves understanding the oblique meaning by relying on the complete composition. </li>
+          <li>Shikshatakam uses all six categories of oblique expressions, demonstrating the author's mastery of poetic devices and his ability to convey complex spiritual ideas in a nuanced and layered manner.</li>
+    
+        </ul>
+      </div>
+    </div>
+    <div id="rasa_school" style="height:800px" class="hero1 analysis_summary">
+      <h2>Rasa school</h2>
+      <div class="align_left">
+        <h3>Basics</h3>
+        <ul>
+          <li>Rasa school of Indian aesthetics emphasizes emotional impact of poetry on the reader or audience
+          </li>
+          <li>Bharata Muni, author of Natyashastra, is most influential thinker associated with this school
+          </li>
+          <li>Rasa theory posits that rasa is the ultimate emotional pleasure that can be derived from a work of art</li>
+          <li>Rasa is the heightened emotional response to the text</li>
+          <li>Bharata classified various emotions into eight different rasas: Shringara, Hasya, Karuna, Raudra, Veera, Bhayanaka, Bibhatsa, and Adbhuta</li>
+          <li>Other important figures associated with this school include Abhinavagupta, Anandavardhana, and Jagannatha Pandita</li>
+          <li>Formula for arousal of rasa presented in Natyashastra involves combination of vibhava, anubhava, and vyabhichari bhava.</li>
+          <li>Vibhava refers to stimulants of emotions, anubhava represents physical responses that accompany emotional reactions, and vyabhichari bhava denotes transitory emotions</li>
+        </ul>
+        <p class="margin_B2"></p>
+        <h3>Analysis</h3>
+        <ul>
+          <li>The author assumes the mood of a devotee and reciprocates with his beloved Lord Krishna</li>
+          <li>Author employs several words to indicate vibhav as Lord Krishna, including śrī-kṛṣṇa-saṅkīrtanam, nāmnām, hariḥ, nanda-tanuja, tava nāma-grahaṇe, govinda, and mat-prāṇa-nāthaḥ</li>
+          <li>Author's intense feelings of separation serve as anubhava, indicated by words such as nānurāgaḥ, a-darśanān, govinda-viraheṇa, and mat-prāṇa-nāthaḥ</li>
+          <li>Rasa evoked in composition is vipralamba sringar, characterized by intense feelings of separation and longing</li>
+          <li>Author effectively employs vibhavas and anubhavas to evoke rasa in Indian classical literature.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="reeti_school" class="hero1 analysis_summary">
+      <h2>Reeti school</h2>
+      <div class="align_left">
+        <h3>Basics</h3>
+        <ul>
+          <li>The concept of Reeti in poetry, also known as Marga or Samghatana, which is considered the soul of poetry by scholar Vamana.</li>
+          <li>There are three Reetis: Vaidarbhee, Gaudee, and Panchalee, named after the geographical areas where poets constructed in these styles.</li>
+          <li>The deterministic elements of Reeti include letters, length and quantity of compounds, and the complexity or simplicity of the composition.</li>
+          <li>Vaidarbhee style is the most delightful, consisting of all ten gunas explained by Vamana, and has a medium amount of samasas.</li>
+          <li>Gaudee style lacks Sukumarata and Madhurya gunas and has long compounds and complex diction dominated by Oja and Kanti gunas.</li>
+          <li>Panchalee Reeti contains the compositions which do not lie in Vaidarbhee and Gaudee.
+          </li>
+          <li>Vamana describes ten qualities of sound and ten qualities of meaning, which are compressed into three gunas.
+          </li>
+          <li>Proper deployment of the elements of Reeti can significantly enhance the impact of poetry on the reader or listener. </li>
+        </ul>
+        <p class="margin_B2"></p>
+        <h3>Analysis</h3>
+        <ul>
+          <li>The Shikshashtakam is a composition that embodies the Madhurya guna and Vaidarbhi reeti.</li>
+          <li>The usage of soft consonants and restricted joint consonants contributes to the simple composition of the Shikshashtakam.</li>
+          <li>The limited occurrence of long compounds in the Shikshashtakam is an aspect of Vaidarbhi reeti.</li>
+          <li>The rasa of the kavya is vipralambha srinagar, which is aptly brought out through the use of Vaidarbhi reeti and madhurya guna.</li>
+          <li>Choosing the appropriate reeti is crucial in conveying the intended rasa. Using any other reeti would have led to a rasa dosha.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="dhvani_school" style="height:1200px" class="hero1 analysis_summary">
+      <h2>Dhvani school</h2>
+      <div class="align_left">
+        <h3>Basics</h3>
+        <ul>
+          <li>The Dhvani school is a prominent school of Indian poetics associated with Anandavardhana and other significant figures such as Abhinavagupta, Kuntaka, and Mahimabhatta.</li>
+          <li>The essence of poetry according to the Dhvani school lies in suggestion or Dhvani, which alludes to the verbal, hidden, and profound aspects of poetry.</li>
+          <li>The Dhvani school distinguishes three categories of meaning in poetry: (1) Vacyartha or literal meaning, (2) Lakshartha or indirect meaning, and (3) Vyangartha or poetic/metaphysical meaning.</li>
+          <li>Dhvani is divided into three broad categories: (1) Vastu-Dhvani, (2) Alankar-Dhvani, and (3) Rasa-Dhvani.</li>
+          <li>Based on the degree of Dhvani, a poem is classified into three categories: (1) Uttama Kavya or best composition, (2) Madhyama Kavya or mediocre composition, and (3) Adhama Kavya or low-level composition.
+          </li>
+          <li>In Uttama Kavya, Dhvani is present, evoking wonder in the reader.</li>
+          <li>In Madhyama Kavya, Vyangartha is present, but it does not evoke wonder compared to Vacyartha, while in Adhama Kavya, Dhvani is absent.</li>
+        </ul>
+        <p class="margin_B2"></p>
+
+        <h3>Analysis</h3>
+        <ul>
+          <li>The verses are organized into 3 possible themes or dhvanis.</li>
+          <li>The first Dhvani deals with the sambandha, abhideya, and prayojana of a devotee.</li>
+          <li>The second Dhvani presents the higher stages of devotional service.</li>
+          <li>The third Dhvani is the biography of the author.
+            <ul class="square">
+              <li>The author's proficiency in Sanskrit grammar and poetry is conveyed in the initial verse.
+              </li>
+              <li>The author's victorious preaching of the message of saṅkīrtanam is illustrated in the biography.</li>
+              <li>The author's egalitarian nature and adherence to the principle of humility are evident in the verses.
+              </li>
+              <li>The last three verses reflect the author's mood of separation in the last 24 years of his life.</li>
+            </ul>
+          </li>
+          <li>The author's teachings in the Siksastakam are a reflection of his own life experiences and practices.</li>      
+        </ul>
+        <p class="margin_B2"></p>
+        <h3>Is Shikshastakam an Uttama Kavya?</h3>
+        <ul>
+          <li>Uttama Kavya requires the presence of Dhvani that evokes wonder in the reader.</li>
+          <li>Dhvani is of three types: Vastu-Dhvani, Alankar-Dhvani, and Rasa-Dhvani.</li>
+          <li>Shikshastakam explores the sambandha, abhideya, and prayojana of a devotee, gradations of devotional service, and the biography of the author in the context of Vastu-Dhvani.</li>
+          <li>Shikshastakam employs a range of figures of speech such as metaphors, similes, and other literary devices to express its emotional essence (rasa) without hindrance in the context of Alankar-Dhvani.</li>
+          <li>Shikshastakam is an exemplar of Rasa-Dhvani as it conveys the feeling of separation from the divine and generates a deep emotional response in the reader.</li>
+          <li>In summary, Shikshastakam is the Uttama Kavya due to the presence of Vastu-Dhvani, Alankar-Dhvani, and Rasa-Dhvani .
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    slideShow('grammer_analysis_slider');
+    if(grammer_slide_no == 0)
+      grammer_slide_no++;
+    console.log("grammer_slide_no:"+grammer_slide_no)
+  </script>
+
+</body>
+
+</html><br />
