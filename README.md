@@ -12,15 +12,13 @@ You can find the web-based platform link [Here](https://sanskritshala.github.io/
 ## Citation
 If you use our tool, we'd appreciate if you cite our paper:
 ```
-@misc{sandhan_Asthetics,
-  doi = {},
-  url = {https://arxiv.org/abs/},
-  author = {Sandhan, Jivnesh},
-  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Aesthetics of Sanskrit Poetry from the Perspective of Computational Linguistics: A Case Study Analysis on Śiksastaka},
-  publisher = {arXiv},
-  year = {2023},
-  copyright = {Creative Commons Attribution 4.0 International}
+@misc{sandhan2023aesthetics,
+      title={Aesthetics of Sanskrit Poetry from the Perspective of Computational Linguistics: A Case Study Analysis on Siksastaka}, 
+      author={Jivnesh Sandhan and Amruta Barbadikar and Malay Maity and Pavankumar Satuluri and Tushar Sandhan and Ravi M. Gupta and Pawan Goyal and Laxmidhar Behera},
+      year={2023},
+      eprint={2308.07081},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
