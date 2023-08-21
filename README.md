@@ -1,7 +1,7 @@
 # Illustration of Aesthetics of Sanskrit Poetry
 
 Official toolkit for the paper ["Aesthetics of Sanskrit Poetry from the Perspective of Computational Linguistics:
-A Case Study Analysis on Śiksastaka"](https://arxiv.org/). If you use this tool, please cite our paper.
+A Case Study Analysis on Śiksastaka"](https://arxiv.org/abs/2308.07081). If you use this tool, please cite our paper.
 
 ## Usage
 You may deploy this tool as a github page. This tool gives a template to display the analysis of system generated analysis. Currently, tool shows the annotated analysis of Siksastaka.
